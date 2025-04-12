@@ -1,0 +1,62 @@
+<head>
+    <title>mObywatel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/documents.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/gC8DDHD.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <div class="bottom_bar">
+        <div class="bottom_bar_grid">
+            <div class="bottom_element_grid" send="home">
+                <div class="bottom_element_image home"></div>
+                <p class="bottom_element_text">Pulpit</p>
+            </div>
+            <div class="bottom_element_grid" send="documents">
+                <div class="bottom_element_image documents documents_open"></div>
+                <p class="bottom_element_text open">Dokumenty</p>
+            </div>
+            <div class="bottom_element_grid" send="services">
+                <div class="bottom_element_image services"></div>
+                <p class="bottom_element_text">Usługi</p>
+            </div>
+            <div class="bottom_element_grid" send="qr">
+                <div class="bottom_element_image qr"></div>
+                <p class="bottom_element_text">Kod QR</p>
+            </div>
+            <div class="bottom_element_grid" send="more">
+                <div class="bottom_element_image more"></div>
+                <p class="bottom_element_text">Więcej</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="action_add action">Dodaj</p>
+        <p class="action_edit action">Edytuj</p>
+        <p class="main_title">Dokumenty</p>
+        <div class="search_grid">
+            <img class="search_icon" src="https://i.imgur.com/tQTUvKY.png">
+            <input class="search" placeholder="Szukaj">
+        </div>
+        <p class="title">Na pulpicie</p>
+        <div class="card" onclick="sendTo('card')">
+            <img class="human" src="https://i.imgur.com/L7PU7Xk.png">
+            <p class="title">mDowód</p>
+            <img class="arrow" src="https://i.imgur.com/Y88ZqRS.png">
+        </div>
+        <p class="title">Pozostałe</p>
+        <div class="other">
+            <p class="other_title">Chcesz przenieść tu dokument z pulpitu?</p>
+            <p class="other_subtitle">Użyj przycisku edytuj w prawym górnym rogu.</p>
+        </div>
+    </div>
+
+    <script src="assets/bar.js"></script>
+    <script src="assets/manifest.js"></script>
+</body>

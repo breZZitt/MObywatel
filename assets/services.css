@@ -1,0 +1,28 @@
+
+.container{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+}
+
+.title{
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.main_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.action{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--text);
+    height: max-content;
+    margin-top: 0;
+}

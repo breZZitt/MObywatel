@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --home: url('https://i.imgur.com/5diJrXi.png');
+    --home-open: url('https://i.imgur.com/sdQYjBt.png');
+    --documents: url('https://i.imgur.com/28v1TEk.png');
+    --documents-open: url('https://i.imgur.com/ZHx3VDs.png');
+    --services: url('https://i.imgur.com/OxfOAfO.png');
+    --services-open: url('https://i.imgur.com/3V2f5uA.png');
+    --qr: url('https://i.imgur.com/M9MhD3N.png');
+    --qr-open: url('https://i.imgur.com/vmr8YVg.png');
+    --more: url('https://i.imgur.com/V5SoHXM.png');
+    --more-open: url('https://i.imgur.com/e9rnYLl.png');
+    --text: #024b97;
+    --shadow: 0px 0px 10px rgb(224, 224, 224);
+}
+
+body{
+    background-color: #f5f6fb;
+}
+
+p, input{
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.main_button{
+    color: #014a93;
+    background-color: #dbeaf9;
+    width: max-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.bottom_element_image{
+    pointer-events: none;
+    width: 28px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-position: center;
+    background-size: 100%;
+}
+
+.home{
+    background-image: var(--home);
+}
+
+.documents{
+    background-image: var(--documents);
+}
+
+.services{
+    background-image: var(--services);
+}
+
+.qr{
+    background-image: var(--qr);
+}
+
+.more{
+    background-image: var(--more);
+}
+
+.home_open{
+    background-image: var(--home-open);
+}
+
+.documents_open{
+    background-image: var(--documents-open);
+}
+
+.services_open{
+    background-image: var(--services-open);
+}
+
+.qr_open{
+    background-image: var(--qr-open);
+}
+
+.more_open{
+    background-image: var(--more-open);
+}
+
+.bottom_element_grid{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content;
+    height: max-content;
+    width: 100%;
+    display: grid;
+}
+
+.bottom_element_text{
+    margin-top: 0;
+    font-size: 11px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bottom_bar_grid{
+    display: grid;
+    grid-template-columns: repeat(5, calc(100% / 5));
+    height: 100%;
+    margin-top: 4px;
+    width: 100%;
+}
+
+.bottom_bar{
+    position: fixed;
+    background-color: #f5f6fb;
+    border-top: 0.1px solid rgb(189, 189, 189);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.open{
+    color: var(--text);
+}
+
+.search_grid{
+    display: grid;
+    width: 98%;
+    grid-template-columns: 30px calc(100% - 30px);
+    background-color: rgb(229, 230, 235);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.search_icon{
+    width: 25px;
+    margin-left: 5px;
+}
+
+.search{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.services_list{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: max-content;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.service{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 5% 80% 15%;
+    border-bottom: 0.5px solid rgb(201, 201, 201);
+    height: 80px;
+}
+
+.service_icon{
+    width: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+}
+
+.service_name{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: max-content;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.arrow{
+    width: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0px;
+    margin-left: auto;
+}

@@ -1,0 +1,134 @@
+
+.container{
+    height: 100%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.top_image{
+    width: 35px;
+}
+
+.right{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.card_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.card_grid .main_button{
+    margin-right: 0;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card{
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 230px;
+    width: 370px;
+    background-color: white;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+
+.id_bottom{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.name{
+    margin-left: 20px;
+    height: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.human{
+    position: absolute;
+    top: 28px;
+    left: 28px;
+}
+
+.arrow{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px !important;
+    margin-left: auto;
+    width: 20px !important;
+}
+
+.card_below_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: max-content;
+}
+
+.card_below_grid .main_button{
+    margin-right: 0;
+}
+
+.services_grid{
+    display: grid;
+    width: 110%;
+    margin-left: -5%;
+    height: max-content;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: max-content max-content;
+}
+
+.service_box{
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.service_box_icon{
+    width: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.service_box_name{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.5;
+}

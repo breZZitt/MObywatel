@@ -1,0 +1,75 @@
+<head>
+    <title>mObywatel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/qr.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/gC8DDHD.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+
+    <div class="error">
+        <div class="opacity close"></div>
+        <div class="error_box">
+            <p class="error_title">Coś poszło nie tak...</p>
+            <p class="error_description">Wygląda na to, że wystąpił bład, spróbuj ponownie później.</p>
+            <p class="error_button close">Rozumiem</p>
+        </div>
+    </div>
+
+    <div class="bottom_bar">
+        <div class="bottom_bar_grid">
+            <div class="bottom_element_grid" send="home">
+                <div class="bottom_element_image home"></div>
+                <p class="bottom_element_text">Pulpit</p>
+            </div>
+            <div class="bottom_element_grid" send="documents">
+                <div class="bottom_element_image documents"></div>
+                <p class="bottom_element_text">Dokumenty</p>
+            </div>
+            <div class="bottom_element_grid" send="services">
+                <div class="bottom_element_image services"></div>
+                <p class="bottom_element_text">Usługi</p>
+            </div>
+            <div class="bottom_element_grid" send="qr">
+                <div class="bottom_element_image qr qr_open"></div>
+                <p class="bottom_element_text open">Kod QR</p>
+            </div>
+            <div class="bottom_element_grid" send="more">
+                <div class="bottom_element_image more"></div>
+                <p class="bottom_element_text">Więcej</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="main_title">Kod QR</p>
+        <p class="description">Wybierz, co chcesz zrobić</p>
+        <div class="action_grid">
+            <div class="action">
+                <img class="action_image" src="https://i.imgur.com/VCThE9p.png">
+                <div class="action_text">
+                    <p class="action_title">Zeskanuj kod QR</p>
+                    <p class="action_subtitle">Zaloguj się lub potwierdź swoje dane.</p>
+                </div>
+                <img class="arrow" src="https://i.imgur.com/x27OY3D.png">
+            </div>
+            <div class="action">
+                <img class="action_image" src="https://i.imgur.com/SdPmeGM.png">
+                <div class="action_text">
+                    <p class="action_title">Pokaż kod QR</p>
+                    <p class="action_subtitle">Sprawdź dokument innej osoby.</p>
+                </div>
+                <img class="arrow" src="https://i.imgur.com/x27OY3D.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/bar.js"></script>
+    <script src="assets/qr.js"></script>
+    <script src="assets/manifest.js"></script>
+</body>

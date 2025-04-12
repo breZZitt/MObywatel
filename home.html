@@ -1,0 +1,91 @@
+<head>
+    <title>mObywatel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/home.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/gC8DDHD.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/gC8DDHD.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <div class="bottom_bar">
+        <div class="bottom_bar_grid">
+            <div class="bottom_element_grid" send="home">
+                <div class="bottom_element_image home_open home"></div>
+                <p class="bottom_element_text open">Pulpit</p>
+            </div>
+            <div class="bottom_element_grid" send="documents">
+                <div class="bottom_element_image documents"></div>
+                <p class="bottom_element_text">Dokumenty</p>
+            </div>
+            <div class="bottom_element_grid" send="services">
+                <div class="bottom_element_image services"></div>
+                <p class="bottom_element_text">Usługi</p>
+            </div>
+            <div class="bottom_element_grid" send="qr">
+                <div class="bottom_element_image qr"></div>
+                <p class="bottom_element_text">Kod QR</p>
+            </div>
+            <div class="bottom_element_grid" send="more">
+                <div class="bottom_element_image more"></div>
+                <p class="bottom_element_text">Więcej</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top_grid">
+            <img src="https://i.imgur.com/F7yo2Gc.png" class="top_image">
+            <img src="https://i.imgur.com/I8owg76.png" class="top_image right">
+        </div>
+        <div class="card_grid">
+            <p class="title">Dokumenty</p>
+            <button class="main_button">Dodaj</button>
+            <button class="main_button all_documents" onclick="sendTo('documents')">Wszystkie</button>
+        </div>
+        <div class="card" onclick="sendTo('card')">
+            <img class="background" src="https://i.imgur.com/WB20A6D.png">
+            <img class="human" src="https://i.imgur.com/L7PU7Xk.png">
+            <div class="id_bottom">
+                <p class="name">mDowód</p>
+                <img class="arrow" src="https://i.imgur.com/x27OY3D.png">
+            </div>
+        </div>
+        <div class="card_below_grid">
+            <p class="title">Usługi</p>
+            <button class="main_button all_services" onclick="sendTo('services')">Wszystkie</button>
+        </div>
+        <div class="services_grid">
+            <div class="service_box">
+                <img class="service_box_icon" src="https://i.imgur.com/zIiL6A2.png">
+                <p class="service_box_name">Bezpiecznie w sieci</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="https://i.imgur.com/ee4CMJf.png">
+                <p class="service_box_name">Historia pojazdu</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="https://i.imgur.com/LReC7MP.png">
+                <p class="service_box_name">Zastrzeż PESEL</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="https://i.imgur.com/7EIfFr4.png">
+                <p class="service_box_name">Firma</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="https://i.imgur.com/dyNMB6y.png">
+                <p class="service_box_name">Punkty karne</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="https://i.imgur.com/8wuXHdP.png">
+                <p class="service_box_name">Mandaty</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/bar.js"></script>
+    <script src="assets/manifest.js"></script>
+</body>
